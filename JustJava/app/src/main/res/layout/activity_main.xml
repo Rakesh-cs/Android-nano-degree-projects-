@@ -22,12 +22,8 @@
             android:inputType="textCapWords"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Toppings"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="30dp"
-            android:textSize="25sp"/>
+            style="@style/HeaderTextStyle"
+            android:text="Toppings" />
 
         <CheckBox
             android:id="@+id/Whipped_cream_checkbox"
@@ -79,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:text="2"
+                android:text="1"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:visibility="visible" />
@@ -92,24 +88,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingLeft="16dp"
-            android:text="Order Summary"
-            android:textAllCaps="true" />
-
-        <TextView
-            android:id="@+id/order_summary_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="$10"
-            android:onClick="submitOrder"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:paddingLeft="16dp" />
 
 
         <Button
@@ -124,5 +102,11 @@
 
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="how are you"
     </LinearLayout>
 </ScrollView>
