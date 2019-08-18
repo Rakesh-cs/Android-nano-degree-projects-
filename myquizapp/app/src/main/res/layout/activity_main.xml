@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
         android:orientation="vertical">
 
         <TextView
@@ -21,15 +20,17 @@
             android:paddingBottom="8dp"
             android:text="Question  1"
             android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="35sp"
+            android:textStyle="italic"
+            android:textAllCaps="true"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_no_1" />
+            android:text="@string/question_no_1"
+            android:textAllCaps="true"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="firstQuestion"
-                android:text="manchester_united" />
+                android:text="manchester_united"
+                android:textAllCaps="true"/>
 
             <RadioButton
                 android:id="@+id/chels"
@@ -49,7 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="firstQuestion"
-                android:text="Chelsea" />
+                android:text="Chelsea"
+                android:textAllCaps="true"/>
 
             <RadioButton
                 android:id="@+id/gunners"
@@ -61,8 +64,6 @@
 
         </RadioGroup>
 
-        <!-- Question 2 -->
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -71,15 +72,17 @@
             android:paddingBottom="8dp"
             android:text="Question  2"
             android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="35sp"
+            android:textStyle="italic"
+            android:textAllCaps="true"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_no_2" />
+            android:text="@string/question_no_2"
+            android:textAllCaps="true"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -91,7 +94,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="secondQuestion"
-                android:text="Juventus" />
+                android:text="Juventus"
+                android:textAllCaps="true"/>
 
             <RadioButton
                 android:id="@+id/Real"
@@ -99,7 +103,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="secondQuestion"
-                android:text="RealMadrid" />
+                android:text="RealMadrid"
+                android:textAllCaps="true"/>
 
             <RadioButton
                 android:id="@+id/Dutch"
@@ -107,7 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="secondQuestion"
-                android:text="Ajax" />
+                android:text="Ajax"
+                android:textAllCaps="true"/>
 
         </RadioGroup>
 
@@ -119,15 +125,17 @@
             android:paddingBottom="8dp"
             android:text="Question  3"
             android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="35sp"
+            android:textStyle="italic"
+            android:textAllCaps="true"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_no_3" />
+            android:text="@string/question_no_3"
+            android:textAllCaps="true"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -139,7 +147,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="ThirdQuestion"
-                android:text="England" />
+                android:text="England"
+                android:textAllCaps="true"/>
 
             <RadioButton
                 android:id="@+id/Ausies"
@@ -147,7 +156,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="ThirdQuestion"
-                android:text="Australia" />
+                android:text="Australia"
+                android:textAllCaps="true"/>
 
             <RadioButton
                 android:id="@+id/TheBlues"
@@ -155,7 +165,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:onClick="ThirdQuestion"
-                android:text="India" />
+                android:text="India"
+                android:textAllCaps="true"/>
 
         </RadioGroup>
 
@@ -167,15 +178,17 @@
             android:paddingBottom="8dp"
             android:text="Question  4"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="35sp"
+            android:textStyle="italic"
+            android:textAllCaps="true"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_no_4" />
+            android:text="@string/question_no_4"
+            android:textAllCaps="true"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -189,28 +202,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Messi" />
+            android:text="Messi"
+             android:textAllCaps="true"/>
 
         <CheckBox
             android:id="@+id/Skiller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Ronaldo " />
+            android:text="Ronaldo "
+            android:textAllCaps="true"/>
 
         <CheckBox
             android:id="@+id/Speedster"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Neymar" />
+            android:text="Neymar"
+            android:textAllCaps="true"/>
 
         <CheckBox
             android:id="@+id/Defender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Carlos Puyol" />
+            android:text="Carlos Puyol"
+            android:textAllCaps="true"/>
 
 
         <TextView
@@ -221,15 +238,17 @@
             android:paddingBottom="8dp"
             android:text="Question  5"
             android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="35sp"
+            android:textStyle="italic"
+            android:textAllCaps="true"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_no_5" />
+            android:text="@string/question_no_5"
+            android:textAllCaps="true"/>
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -268,7 +287,8 @@
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
             android:onClick="Output"
-            android:text="enter" />
+            android:text="enter"
+            android:textAllCaps="true"/>
 
     </LinearLayout>
 </ScrollView>

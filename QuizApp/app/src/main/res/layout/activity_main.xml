@@ -17,10 +17,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:textSize="34dp"
+            android:textStyle="italic"
             android:gravity="center"
-            android:paddingBottom="8dp"
             android:paddingTop="8dp"
             android:text="question_1"
             android:textColor="@color/colorAccent"/>
