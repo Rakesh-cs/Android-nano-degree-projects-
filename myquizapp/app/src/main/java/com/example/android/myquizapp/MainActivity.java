@@ -23,175 +23,148 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    int score = 0;
+    int Value = 0;
 
-    /**
-     * Question 1 answer
-     * @param view check RadioButton when the team is selected
-     */
-    public void onRadioButtonClickedQuestion1(View view) {
+
+    public void firstQuestion(View view) {
 
         boolean checked = ((RadioButton) view).isChecked();
 
         switch (view.getId())  {
-            case R.id.miami_heat:
+            case R.id.manutd:
                 if (checked)
-                    getIntent().putExtra("score", 1);
+                    getIntent().putExtra("Value", 1);
                 break;
-            case R.id.new_york_knicks:
+            case R.id.chels:
                 if (checked)
                     break;
-            case R.id.chicago_bulls:
+            case R.id.gunners:
                 if (checked)
                     break;
         }
     }
 
-    /**
-     * Question 2 answer
-     * @param view check RadioButton when the player is selected
-     */
-    public void onRadioButtonClickedQuestion2(View view) {
+
+    public void secondQuestion(View view) {
 
         boolean checked = ((RadioButton) view).isChecked();
 
         switch (view.getId())  {
-            case R.id.lebron_james:
+            case R.id.Juve:
                 if (checked)
-                    getIntent().putExtra("score", 1);
+                    getIntent().putExtra("Value", 1);
                 break;
-            case R.id.kevin_durant:
+            case R.id.Real:
                 if (checked)
                     break;
-            case R.id.stephen_curry:
+            case R.id.Dutch:
                 if (checked)
                     break;
         }
     }
 
-    /**
-     * Question 3 answer
-     * @param view check RadioButton when the player is selected
-     */
-    public void onRadioButtonClickedQuestion3(View view) {
+    public void Output (View view) {
+
+        RadioButton Manutd = (RadioButton) findViewById(R.id.manutd);
+        boolean Manchester = Manutd.isChecked();
+
+        RadioButton RealRadioButton = (RadioButton) findViewById(R.id.Real);
+        boolean Madrid = RealRadioButton.isChecked();
+
+        RadioButton TheYellows = (RadioButton) findViewById(R.id.Ausies);
+        boolean Australia = TheYellows.isChecked();
+
+        CheckBox TheReds = (CheckBox) findViewById(R.id.BestPlayer);
+        boolean barcelona = TheReds.isChecked();
+
+        CheckBox Therunnersx = (CheckBox) findViewById(R.id.Speedster);
+        boolean TheLeague = Therunnersx.isChecked();
+
+        CheckBox Pacers = (CheckBox) findViewById(R.id.Skiller);
+        boolean Laliga = Pacers.isChecked();
+
+        CheckBox TheInvinsibles = (CheckBox) findViewById(R.id.Defender);
+        boolean Ligue1 = TheInvinsibles.isChecked();
+
+        RadioButton Ballondor = (RadioButton) findViewById(R.id.Luka);
+        boolean Edernsive = Ballondor.isChecked();
+
+
+        int Value = Outputintake(Manchester, Madrid, Australia, barcelona, TheLeague, Laliga, Ligue1, Edernsive);
+
+        Toast.makeText(this, getString(R.string.Enter_the_Score) + Value, Toast.LENGTH_LONG).show();
+
+    }
+
+
+    public void ThirdQuestion(View view) {
 
         boolean checked = ((RadioButton) view).isChecked();
 
-        switch (view.getId())  {
-            case R.id.zach_randolph:
+        switch (view.getId())
+        {
+            case R.id.Eng:
                 if (checked)
                     break;
-            case R.id.kobe_bryant:
+            case R.id.Ausies:
                 if (checked)
-                    getIntent().putExtra("score", 1);
+                    getIntent().putExtra("Value", 1);
                 break;
-            case R.id.dikembe_mutombo:
+            case R.id.TheBlues:
                 if (checked)
                     break;
         }
     }
-
-    /**
-     * Question 5 answer
-     * @param view check RadioButton when the player is selected
-     */
-    public void onRadioButtonClickedQuestion4(View view) {
+    
+    public void fourthQuestion(View view)
+    {
 
         boolean checked = ((RadioButton) view).isChecked();
 
-        switch (view.getId())  {
-            case R.id.ray_walter:
-                getIntent().putExtra("score", 1);
+        switch (view.getId())
+        {
+            case R.id.ronaldo:
                 if (checked)
                     break;
-            case R.id.ray_dejean:
+            case R.id.Luka:
                 if (checked)
+                    getIntent().putExtra("Value", 1);
                     break;
-            case R.id.ray_joey:
+            case R.id.Messi:
                 if (checked)
                     break;
         }
     }
 
-    /**
-     *
-     * Check the correct answers
-     * calculate score
-     * create Toast message with score
-     *
-     */
 
-    public void showQuizScore (View view) {
 
-        RadioButton miamiHeatRadioButton = (RadioButton) findViewById(R.id.miami_heat);
-        boolean isMiamiHeat = miamiHeatRadioButton.isChecked();
 
-        RadioButton kevinDurantRadioButton = (RadioButton) findViewById(R.id.kevin_durant);
-        boolean isKevinDurant = kevinDurantRadioButton.isChecked();
 
-        RadioButton kobeBryantRadioButton = (RadioButton) findViewById(R.id.kobe_bryant);
-        boolean isKobeBryant = kobeBryantRadioButton.isChecked();
+    private int Outputintake(boolean Manchester, boolean Madrid, boolean Australia, boolean barcelona, boolean TheLeague, boolean Laliga, boolean Ligue1, boolean Edernsive) {
+        int Points = 0;
 
-        CheckBox marcinGortatCheckBox = (CheckBox) findViewById(R.id.marcin_gortat);
-        boolean isMarcinGortat = marcinGortatCheckBox.isChecked();
-
-        CheckBox andreaBargnaniCheckBox = (CheckBox) findViewById(R.id.andrea_bargnani);
-        boolean isAndreaBargnani = andreaBargnaniCheckBox.isChecked();
-
-        CheckBox marcoBelinelliCheckbox = (CheckBox) findViewById(R.id.marco_belinelli);
-        boolean isMarcoBelinelli = marcoBelinelliCheckbox.isChecked();
-
-        CheckBox zazaPachuliaCheckBox = (CheckBox) findViewById(R.id.zaza_pachulia);
-        boolean isZazaPachulia = zazaPachuliaCheckBox.isChecked();
-
-        RadioButton rayWalterRadioButton = (RadioButton) findViewById(R.id.ray_walter);
-        boolean isRayWalter = rayWalterRadioButton.isChecked();
-
-        EditText answerQuestion6 = (EditText) findViewById(R.id.edit_text_answer_6);
-        boolean isWiltChamberlain = answerQuestion6.getText().toString().matches("Wilt Chamberlain");
-
-        EditText answerQuestion7 = (EditText) findViewById(R.id.edit_text_answer_7);
-        boolean isCavaliersWarriors = answerQuestion7.getText().toString().matches("Cavaliers - Warriors 4-3");
-
-        int score = calculateScore(isMiamiHeat, isKevinDurant, isKobeBryant, isMarcinGortat, isAndreaBargnani, isMarcoBelinelli, isZazaPachulia, isRayWalter, isWiltChamberlain, isCavaliersWarriors);
-
-        Toast.makeText(this, getString(R.string.show_quiz_score) + score, Toast.LENGTH_LONG).show();
-
-    }
-
-    /**
-     *
-     * add points for correct answers
-     * return real value of points
-     */
-
-    private int calculateScore(boolean isMiamiHeat, boolean isKevinDurant, boolean isKobeBryant, boolean isMarcinGortat, boolean isAndreaBargnani,  boolean isMarcoBelinelli, boolean isZazaPachulia, boolean isRayWalter, boolean isWiltChamberlain, boolean isCavaliersWarriors) {
-        int startingScore = 0;
-
-        if (isMiamiHeat) {
-            startingScore = startingScore + 1;
+        if (Manchester)
+        {
+            Points = Points + 1;
         }
 
-        if (isKevinDurant) {
-            startingScore = startingScore + 1;
+        if (Madrid)
+        {
+            Points = Points + 1;
         }
-        if (isKobeBryant) {
-            startingScore = startingScore + 1;
+        if (Australia)
+        {
+            Points = Points + 1;
         }
-        if (isMarcinGortat && isAndreaBargnani &&! isMarcoBelinelli &&! isZazaPachulia) {
-            startingScore = startingScore + 1;
+        if (barcelona && TheLeague &&! Laliga &&! Ligue1) {
+            Points = Points + 1;
         }
-        if (isRayWalter) {
-            startingScore = startingScore + 1;
-        }
-        if (isWiltChamberlain) {
-            startingScore = startingScore + 1;
-        }
-        if (isCavaliersWarriors) {
-            startingScore = startingScore + 1;
+        if (Edernsive)
+        {
+            Points = Points + 1;
         }
 
-        return score + startingScore;
+        return Value + Points;
     }
 
 }

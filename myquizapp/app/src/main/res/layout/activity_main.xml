@@ -6,59 +6,58 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.myquizapp.MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="4dp">
-
-        <!-- Question 1 -->
+        android:layout_margin="4dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="8dp"
             android:paddingTop="8dp"
-            android:text="@string/question_1"
-            android:textColor="@color/colorAccent" />
+            android:paddingBottom="8dp"
+            android:text="Question  1"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_text_1" />
+            android:text="@string/question_no_1" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/miami_heat"
+                android:id="@+id/manutd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/miami_heat"
-                android:onClick="onRadioButtonClickedQuestion1" />
+                android:onClick="firstQuestion"
+                android:text="manchester_united" />
 
             <RadioButton
-                android:id="@+id/new_york_knicks"
+                android:id="@+id/chels"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/new_york_knicks"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion1" />
+                android:onClick="firstQuestion"
+                android:text="Chelsea" />
 
             <RadioButton
-                android:id="@+id/chicago_bulls"
+                android:id="@+id/gunners"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/chicago_bulls"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion1" />
+                android:onClick="firstQuestion"
+                android:text="Arsenal" />
 
         </RadioGroup>
 
@@ -67,273 +66,209 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="8dp"
             android:paddingTop="8dp"
-            android:text="@string/question_2"
-            android:textColor="@color/colorAccent" />
+            android:paddingBottom="8dp"
+            android:text="Question  2"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_text_2" />
+            android:text="@string/question_no_2" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/lebron_james"
+                android:id="@+id/Juve"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/lebron_james"
-                android:onClick="onRadioButtonClickedQuestion2" />
+                android:onClick="secondQuestion"
+                android:text="Juventus" />
 
             <RadioButton
-                android:id="@+id/kevin_durant"
+                android:id="@+id/Real"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/kevin_durant"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion2" />
+                android:onClick="secondQuestion"
+                android:text="RealMadrid" />
 
             <RadioButton
-                android:id="@+id/stephen_curry"
+                android:id="@+id/Dutch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/stephen_curry"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion2" />
+                android:onClick="secondQuestion"
+                android:text="Ajax" />
 
         </RadioGroup>
 
-        <!-- Question 3 -->
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="8dp"
             android:paddingTop="8dp"
-            android:text="@string/question_3"
-            android:textColor="@color/colorAccent" />
+            android:paddingBottom="8dp"
+            android:text="Question  3"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_text_3" />
+            android:text="@string/question_no_3" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/zach_randolph"
+                android:id="@+id/Eng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/zach_randolph"
-                android:onClick="onRadioButtonClickedQuestion3" />
+                android:onClick="ThirdQuestion"
+                android:text="England" />
 
             <RadioButton
-                android:id="@+id/kobe_bryant"
+                android:id="@+id/Ausies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/kobe_bryant"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion3" />
+                android:onClick="ThirdQuestion"
+                android:text="Australia" />
 
             <RadioButton
-                android:id="@+id/dikembe_mutombo"
+                android:id="@+id/TheBlues"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/dikembe_mutombo"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion3" />
+                android:onClick="ThirdQuestion"
+                android:text="India" />
 
         </RadioGroup>
 
-        <!-- Question 4 -->
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="8dp"
             android:paddingTop="8dp"
-            android:text="@string/question_4"
-            android:textColor="@color/colorAccent" />
+            android:paddingBottom="8dp"
+            android:text="Question  4"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_text_4" />
+            android:text="@string/question_no_4" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/gortat_and_bargnani"
-            android:paddingBottom="8dp" />
+            android:src="@drawable/pic" />
 
         <CheckBox
-            android:id="@+id/marcin_gortat"
+            android:id="@+id/BestPlayer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/marcin_gortat"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:text="Messi" />
 
         <CheckBox
-            android:id="@+id/marco_belinelli"
+            android:id="@+id/Skiller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/marco_belinelli"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:text="Ronaldo " />
 
         <CheckBox
-            android:id="@+id/andrea_bargnani"
+            android:id="@+id/Speedster"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/andrea_bargnani"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:text="Neymar" />
 
         <CheckBox
-            android:id="@+id/zaza_pachulia"
+            android:id="@+id/Defender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/zaza_pachulia"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:text="Carlos Puyol" />
 
-        <!-- Question 5 -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="8dp"
             android:paddingTop="8dp"
-            android:text="@string/question_5"
-            android:textColor="@color/colorAccent" />
+            android:paddingBottom="8dp"
+            android:text="Question  5"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingBottom="8dp"
-            android:text="@string/question_text_5" />
+            android:text="@string/question_no_5" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/ray_walter"
+                android:id="@+id/ronaldo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/ray_walter"
-                android:onClick="onRadioButtonClickedQuestion4" />
+                android:onClick="fourthQuestion"
+                android:text="2017" />
 
             <RadioButton
-                android:id="@+id/ray_dejean"
+                android:id="@+id/Luka"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ray_dejean"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion4" />
+                android:onClick="fourthQuestion"
+                android:text="2018" />
 
             <RadioButton
-                android:id="@+id/ray_joey"
+                android:id="@+id/Messi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ray_joey"
                 android:layout_marginBottom="8dp"
-                android:onClick="onRadioButtonClickedQuestion4" />
+                android:onClick="fourthQuestion"
+                android:text="2016" />
 
         </RadioGroup>
 
-        <!-- Question 6 -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:text="@string/question_6"
-            android:textColor="@color/colorAccent" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:paddingBottom="8dp"
-            android:text="@string/question_text_6" />
-
-        <EditText
-            android:id="@+id/edit_text_answer_6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/answer_question_6"
-            android:inputType="textCapWords"
-            android:layout_marginBottom="8dp" />
-
-        <!-- Question 7 -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
-            android:text="@string/question_7"
-            android:textColor="@color/colorAccent" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:paddingBottom="8dp"
-            android:text="@string/question_text_7" />
-
-        <EditText
-            android:id="@+id/edit_text_answer_7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/answer_question_7"
-            android:inputType="textCapWords"
-            android:layout_marginBottom="8dp" />
-
-        <!-- Button which is checking correct answers -->
-
         <Button
-            android:id="@+id/show_quiz_score"
+            android:id="@+id/Enter_the_Score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="check_answers_button"
             android:layout_marginBottom="16dp"
-            android:onClick="showQuizScore" />
+            android:onClick="Output"
+            android:text="enter" />
 
     </LinearLayout>
-
 </ScrollView>
