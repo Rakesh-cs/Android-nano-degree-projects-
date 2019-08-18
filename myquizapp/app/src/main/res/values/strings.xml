@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">myquizapp</string>
+    <string name="andrea_bargnani">Andrea Bargnani</string>
+    <string name="answer_question_6">First name and Last Name</string>
+    <string name="answer_question_7">Wins - Loser 9-9</string>
+    <string name="check_answers_button">Check the result</string>
+    <string name="chicago_bulls">Chicago Bulls</string>
+    <string name="dikembe_mutombo">Dikembe Mutombo</string>
+    <string name="kevin_durant">Kevin Durant</string>
+    <string name="kobe_bryant">Kobe Bryant</string>
+    <string name="lebron_james">LeBron James</string>
+    <string name="marcin_gortat">Marcin Gortat</string>
+    <string name="marco_belinelli">Marco Belinelli</string>
+    <string name="miami_heat">Miami Heat</string>
+    <string name="new_york_knicks">New York Knicks</string>
+    <string name="question_1">Question 1</string>
+    <string name="question_2">Question 2</string>
+    <string name="question_3">Question 3</string>
+    <string name="question_4">Question  4</string>
+    <string name="question_5">Question 5</string>
+    <string name="question_6">Question 6</string>
+    <string name="question_7">Question 7</string>
+    <string name="question_text_1">Which team won the Eastern Conference Finals in 2013?</string>
+    <string name="question_text_2">Which player has never won a championship title?</string>
+    <string name="question_text_3">Which player was given a nickname \"Black Mamba\"?</string>
+    <string name="question_text_4">Who you see in the photo below?</string>
+    <string name="question_text_5">What is the real name of Ray Allen?</string>
+    <string name="question_text_6">Who became the NBA top scorer in the 1959-60 season?</string>
+    <string name="question_text_7">Enter the correct teams and the results of the 2016 NBA finals. (Enter only team names, no cities)</string>
+    <string name="ray_dejean">DeJean</string>
+    <string name="ray_joey">Joey</string>
+    <string name="ray_walter">Walter</string>
+    <string name="show_quiz_score">"your score to: "</string>
+    <string name="stephen_curry">Stephen Curry</string>
+    <string name="zach_randolph">Zach Randolph</string>
+    <string name="zaza_pachulia">Zaza Pachulia</string>
+</resources>

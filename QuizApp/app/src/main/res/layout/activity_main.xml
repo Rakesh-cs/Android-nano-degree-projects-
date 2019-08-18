@@ -38,11 +38,11 @@
 
             <RadioButton
                 android:id="@+id/miami_heat"
-                android:layout_width="wrap_content"
+                android:layout_width="136dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="miami_heat"
-                android:onClick="onRadioButtonClickedQuestion1"/>
+                android:onClick="onRadioButtonClickedQuestion1"
+                android:text="miami_heat" />
 
             <RadioButton
                 android:id="@+id/new_york_knicks"
@@ -147,7 +147,7 @@
 
         </RadioGroup>
 
-        <!-- Question 4 -->
+
 
         <TextView
             android:layout_width="match_parent"
@@ -201,5 +201,8 @@
             android:layout_height="wrap_content"
             android:text="zaza_pachulia"
             android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</ScrollView>
+
 
 
