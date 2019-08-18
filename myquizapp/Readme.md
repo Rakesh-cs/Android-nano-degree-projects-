@@ -5,4 +5,4 @@ The app is football quiz app  consisting of scroll view Linear layout and many m
 This app provides basic foundation for android developers.
 
 
-![Quiz App Screenshot](Android-nano-degree-projects-/draft_images/quiz_app_screenshot1.PNG)
+![Quiz App Screenshot](Android-nano-degree-projects-/draft_images/quiz_app_screenshot1.jpg)
