@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     *correct answers
+     * calculate score
+     */
     public void Output (View view) {
 
         RadioButton Manutd = (RadioButton) findViewById(R.id.manutd);
@@ -89,8 +93,11 @@ public class MainActivity extends AppCompatActivity {
         RadioButton Ballondor = (RadioButton) findViewById(R.id.Luka);
         boolean Edernsive = Ballondor.isChecked();
 
+        EditText answertoQuestion6 = (EditText) findViewById(R.id.answerto_6);
+        boolean Tennis_6= answertoQuestion6.getText().toString().matches("Roger Federer");
 
-        int Value = Outputintake(Manchester, Madrid, Australia, barcelona, TheLeague, Laliga, Ligue1, Edernsive);
+
+        int Value = Outputintake(Manchester, Madrid, Australia, barcelona, TheLeague, Laliga, Ligue1, Edernsive,Tennis_6);
 
         Toast.makeText(this, getString(R.string.Enter_the_Score) + Value, Toast.LENGTH_LONG).show();
 
@@ -112,7 +119,16 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.TheBlues:
                 if (checked)
+                {
+                    checked = true;
+
+
+                }
+                else{
                     break;
+                }
+
+
         }
     }
     
@@ -137,10 +153,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     *
+     * add points for correct answers
+     * return real value of points
+     */
 
 
-
-    private int Outputintake(boolean Manchester, boolean Madrid, boolean Australia, boolean barcelona, boolean TheLeague, boolean Laliga, boolean Ligue1, boolean Edernsive) {
+    private int Outputintake(boolean Manchester, boolean Madrid, boolean Australia, boolean barcelona, boolean TheLeague, boolean Laliga, boolean Ligue1, boolean Edernsive, boolean Tennis_6) {
         int Points = 0;
 
         if (Manchester)
@@ -160,6 +180,12 @@ public class MainActivity extends AppCompatActivity {
             Points = Points + 1;
         }
         if (Edernsive)
+        {
+            Points = Points + 1;
+        }
+
+
+        if (Tennis_6)
         {
             Points = Points + 1;
         }

@@ -6,5 +6,7 @@
     <string name="question_no_3">who won the cricket world cup 2015?</string>
     <string name="question_no_4">Who you see in the photo below?</string>
     <string name="question_no_5">When did Luka modric Win Ballon,dor ?</string>
+    <string name="question_no_6">Who won the Wimbledon 2017 ?</string>
     <string name="Enter_the_Score">"Score: "</string>
+    <string name="hintlabel_6">Full Name</string>
 </resources>

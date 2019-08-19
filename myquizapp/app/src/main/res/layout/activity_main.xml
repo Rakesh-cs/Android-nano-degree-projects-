@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
+         <!-- Question no 1-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -63,6 +63,8 @@
                 android:text="Arsenal" />
 
         </RadioGroup>
+
+        <!-- Question no 2-->
 
         <TextView
             android:layout_width="match_parent"
@@ -117,6 +119,8 @@
 
         </RadioGroup>
 
+        <!-- Question no 3-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -170,6 +174,7 @@
 
         </RadioGroup>
 
+        <!-- Question no 4-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -229,7 +234,7 @@
             android:text="Carlos Puyol"
             android:textAllCaps="true"/>
 
-
+        <!-- Question no 5-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -248,7 +253,7 @@
             android:gravity="center"
             android:paddingBottom="8dp"
             android:text="@string/question_no_5"
-            android:textAllCaps="true"/>
+            android:textAllCaps="true" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -280,6 +285,33 @@
 
         </RadioGroup>
 
+
+        <!-- Question no 6-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Question  6"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="@string/question_no_6" />
+
+        <EditText
+            android:id="@+id/answerto_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintlabel_6"
+            android:layout_marginBottom="8dp" />
+
         <Button
             android:id="@+id/Enter_the_Score"
             android:layout_width="wrap_content"
@@ -289,6 +321,9 @@
             android:onClick="Output"
             android:text="enter"
             android:textAllCaps="true"/>
+
+
+
 
     </LinearLayout>
 </ScrollView>
