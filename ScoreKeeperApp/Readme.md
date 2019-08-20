@@ -1,5 +1,5 @@
 # ScoreKeeper APP
-This is  MY first ScoreKeeper app. So I made it project whwn was give by udacity as part of nano degree  and will let you  You what I have done .
+This is  MY first ScoreKeeper.This is a part of nano degree provided by udacity and will let you  You what I have done .
 
 This app keeps score points in the game of baseball. The screen is divided into two parts, every part consists of
 
