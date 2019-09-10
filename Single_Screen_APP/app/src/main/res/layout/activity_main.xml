@@ -44,7 +44,7 @@
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_marginLeft="45dp"
-        android android:layout_marginTop="20dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/logo"
         android:src="@drawable/call" />
 
@@ -81,7 +81,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginBottom="209dp"
         android:text="THECafeDiet@gmail.com"
         android:textColor="#E9F1E3"
@@ -99,7 +98,7 @@
         android:textColor="#E9F1E3"
         android:textSize="21sp"
         android:textStyle="italic"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="50dp"></TextView>
 
     <ImageView
         android:layout_width="45dp"
