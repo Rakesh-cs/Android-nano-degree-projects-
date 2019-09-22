@@ -23,18 +23,19 @@ public class MainActivity extends AppCompatActivity
 
 
 
-    numbers.setOnClickListener(new View.OnClickListener()
-    {
-
-        @Override
-        public void onClick(View view)
+        numbers.setOnClickListener(new View.OnClickListener()
         {
 
-            Intent numbersIntent = new Intent(MainActivity.this, MainActivity2.class);
+            @Override
+            public void onClick(View view)
+            {
 
-            startActivity(numbersIntent);
-        }
-    });
+                Intent numbersIntent = new Intent(MainActivity.this, albums.class);
+
+                startActivity(numbersIntent);
+            }
+        });
+
 
 }
 }

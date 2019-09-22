@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity2"></activity>
+        <activity
+            android:name=".POP"
+            android:label="Pop Music" />
+        <activity
+            android:name=".Electronic"
+            android:label="Electronic Music" />
+        <activity
+            android:name=".Romantic"
+            android:label="Romantic Music" />
+        <activity android:name=".albums"
+            android:label="Albums List"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
